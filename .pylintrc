@@ -1,0 +1,31 @@
+[MASTER]
+
+# Use multiple processes to speed up Pylint.
+jobs=4
+
+
+[ELIF]
+
+# Maximum number of nested blocks for function / method body
+max-nested-blocks=3
+
+
+[FORMAT]
+
+# Maximum number of characters on a single line.
+max-line-length=100
+
+# Maximum number of lines in a module
+max-module-lines=300
+
+
+[DESIGN]
+
+# Set the maximum number of arguments that a function should have.
+max-args=3
+
+# Maximum number of return / yield for function / method body
+max-returns=2
+
+# Maximum number of statements in function / method body
+max-statements=30
