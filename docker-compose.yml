@@ -1,0 +1,28 @@
+version: '3.9'
+services:
+  groups_api:
+    container_name: groups_api
+    build: ./api
+    restart: always
+    ports:
+      - '5050:5050'
+    volumes:
+      - ./api:/Groups_app
+    depends_on:
+      - groups_db
+    environment:
+      - DB_URL=postgresql://postgres:postgres@groups_db:5432/postgres
+  groups_db:
+    container_name: groups_db
+    image: postgres:12
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
