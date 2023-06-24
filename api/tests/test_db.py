@@ -6,7 +6,7 @@ from DB.dbHandler import generate_id
 
 # delete test data after end of test
 @pytest.fixture(scope="session", autouse=True)
-def delete_remaining_users():
+def delete_remaining_data():
     yield
     with app.app_context():
         data = Groups.query.filter_by(group_name="Surviving the Sadna!").first()
