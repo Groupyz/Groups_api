@@ -8,11 +8,11 @@ from DB.dbHandler import generate_id
 @pytest.fixture(scope="session", autouse=True)
 def delete_remaining_users():
     yield
-
-    data = Groups.query.filter_by(group_name="Surviving the Sadna!")
-    if data:
-        db.session.delete(data)
-        db.session.commit()
+    with app.app_context():
+        data = Groups.query.filter_by(group_name="Surviving the Sadna!").first()
+        if data:
+            db.session.delete(data)
+            db.session.commit()
 
 
 @pytest.fixture(scope="session")
@@ -36,11 +36,8 @@ def test_create_data():
             assert saved_data is not None
 
 
-
 def create_test_data():
     new_data = Groups(
-        user_id=generate_id()
-        group_id=1
-        group_name="Surviving the Sadna!"
+        user_id=generate_id(), group_id=1, group_name="Surviving the Sadna!"
     )
     return new_data
