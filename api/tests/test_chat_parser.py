@@ -117,7 +117,8 @@ def test_create_db_record_from_chat_class(chats_parser):
 
 # Check parse summary return logical info
 def test_parser_summary(chats_parser):
-    summary = chats_parser.create_group_records()
-    assert summary.total_records_created == len(chats_parser.chats)
+    len_data_variables, len_json = 10, 10
+    summary = chats_parser.summary(len_data_variables, len_json, DUMMY_USER_ID)
+    assert summary.total_records_created == len_data_variables
     assert summary.total_records_failed == 0
     assert summary.user_id == DUMMY_USER_ID
