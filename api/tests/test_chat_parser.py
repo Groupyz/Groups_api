@@ -4,7 +4,6 @@ import json
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from DB.models import Groups
 
 # TODO: make dynamic
 INVALID_JSON = "invalid json"
