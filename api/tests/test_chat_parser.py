@@ -4,13 +4,15 @@ import json
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from chat_parser.chat_parser import ChatParser
+from chat_parser.parser_data_classes import Summary
 
 # TODO: make dynamic
 INVALID_JSON = "invalid json"
 DUMMY_USER_ID = "123456789"
 
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def chats_json():
     file_path = os.path.join(os.path.dirname(__file__), "dummy_chats.json")
     with open(file_path) as json_file:
@@ -38,7 +40,7 @@ def test_app():
 @pytest.fixture(scope="module")
 def chats_parser(chats_json):
     DUMMY_USER_ID = "your_dummy_user_id"  # Replace with your dummy user ID
-    parser = ChatsParser(chats_json, DUMMY_USER_ID)
+    parser = ChatParser(chats_json, DUMMY_USER_ID)
     return parser
 
 
@@ -78,7 +80,7 @@ def test_positive_parser_flow(chats_parser):
 def test_negative_parser_flow(chats_json):
     invalid_json = make_json_invalid(chats_json)
     try:
-        parser = ChatsParser(invalid_json, DUMMY_USER_ID)
+        parser = ChatParser(invalid_json, DUMMY_USER_ID)
         parser.parse()
     except Exception as e:
         assert e == INVALID_JSON
@@ -117,7 +119,7 @@ def test_create_db_record_from_chat_class(chats_parser):
 # Check parse summary return logical info
 def test_parser_summary(chats_parser):
     len_data_variables, len_json = 10, 10
-    summary = chats_parser.summary(len_data_variables, len_json, DUMMY_USER_ID)
+    summary = Summary(len_data_variables, len_json, DUMMY_USER_ID)
     assert summary.total_records_created == len_data_variables
     assert summary.total_records_failed == 0
     assert summary.user_id == DUMMY_USER_ID
