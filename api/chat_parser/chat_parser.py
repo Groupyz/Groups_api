@@ -1,4 +1,4 @@
-from chat_parser.parser_data_classes import Summary
+from chat_parser.parser_data_classes import Summary, Chat
 
 
 class ChatParser:

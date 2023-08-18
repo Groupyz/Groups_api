@@ -5,7 +5,7 @@ import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from chat_parser.chat_parser import ChatParser
-from chat_parser.parser_data_classes import Summary
+from chat_parser.parser_data_classes import Summary, Chat
 
 # TODO: make dynamic
 INVALID_JSON = "invalid json"
@@ -116,7 +116,14 @@ def test_create_db_record_from_chat_class(chats_parser):
     assert len(records_with_user_id) == len(chats)
 
 
-# Check parse summary return logical info
+def test_create_chat_data_class():
+    group_id, gorup_name, user_id = "123456789", "test_group", DUMMY_USER_ID
+    chat = Chat(group_id, gorup_name, user_id)
+    assert chat.group_id == group_id
+    assert chat.group_name == gorup_name
+    assert chat.user_id == user_id
+
+
 def test_parser_summary(chats_parser):
     len_data_variables, len_json = 10, 10
     summary = Summary(len_data_variables, len_json, DUMMY_USER_ID)
