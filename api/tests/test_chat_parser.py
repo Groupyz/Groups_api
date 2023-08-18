@@ -1,18 +1,18 @@
-from importlib import import_module
 import pytest
 import json
 import os
-from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from app import db, app
 from chat_parser.chat_parser import ChatParser
 from chat_parser.parser_data_classes import Summary, Chat
+from DB.models import Groups
 
 # TODO: make dynamic
 INVALID_JSON = "invalid json"
 DUMMY_USER_ID = "123456789"
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="session")
 def chats_json():
     file_path = os.path.join(os.path.dirname(__file__), "dummy_chats.json")
     with open(file_path) as json_file:
@@ -20,37 +20,11 @@ def chats_json():
     return data
 
 
-@pytest.fixture(scope="module")
-def test_app():
-    app = Flask(__name__)
-    app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
-    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-
-    with app.app_context():
-        db = SQLAlchemy(app)
-        import_models()  # Dynamically import the models
-        db.create_all()
-
-        yield app
-
-        db.session.remove()
-        db.drop_all()
-
-
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="session")
 def chats_parser(chats_json):
     DUMMY_USER_ID = "your_dummy_user_id"  # Replace with your dummy user ID
     parser = ChatParser(chats_json, DUMMY_USER_ID)
     return parser
-
-
-# imports module dynamically to avoid circulair imports
-def import_models():
-    model_module = import_module("DB.models")
-    for attribute_name in dir(model_module):
-        attribute = getattr(model_module, attribute_name)
-        if hasattr(attribute, "__tablename__"):
-            globals()[attribute_name] = attribute
 
 
 # Tests that file is retrived & valid
@@ -110,15 +84,18 @@ def test_failed_create_chat_from_chat_json(json_chat, chats_parser):
 
 # Test creates DB records from chats data class
 def test_create_db_record_from_chat_class(chats_parser):
-    chats = create_dummy_chats_data_class()
-    chats_parser.create_db_records(chats)
-    records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
-    assert len(records_with_user_id) == len(chats)
+    with app.app_context():
+        chats = create_multiple_chats(num_records=1)
+        chats_parser.create_db_records(chats)
+        records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
+        assert len(records_with_user_id) == len(chats)
 
 
 def test_create_chat_data_class():
     group_id, gorup_name, user_id = "123456789", "test_group", DUMMY_USER_ID
-    chat = Chat(group_id, gorup_name, user_id)
+    chat = create_dummy_chat_data_class(
+        group_id=group_id, group_name=gorup_name, user_id=user_id
+    )
     assert chat.group_id == group_id
     assert chat.group_name == gorup_name
     assert chat.user_id == user_id
@@ -130,3 +107,26 @@ def test_parser_summary(chats_parser):
     assert summary.total_records_created == len_data_variables
     assert summary.total_records_failed == 0
     assert summary.user_id == DUMMY_USER_ID
+
+
+def create_multiple_chats(num_records):
+    chats = []
+    for i in range(num_records):
+        group_id = str(i + 1)  # Generating a unique group ID
+        group_name = f"group_{i + 1}"  # Generating a unique group name
+        chat = create_dummy_chat_data_class(group_id=group_id, group_name=group_name)
+        chats.append(chat)
+
+    return chats
+
+
+def create_dummy_chat_data_class(**kwargs):
+    default = {
+        "group_id": "123456789",
+        "group_name": "test_group",
+        "user_id": DUMMY_USER_ID,
+    }
+    default.update(kwargs)
+    chat = Chat(**default)
+
+    return chat
