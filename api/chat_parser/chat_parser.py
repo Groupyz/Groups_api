@@ -31,7 +31,7 @@ class ChatParser:
                 group_name=json_chat.get("name"),
                 user_id=self.user_id,
             )
-        except Exception as e:
+        except KeyError:
             raise Exception(CHAT_ERROR_PARSING)
 
         return chat

@@ -85,9 +85,9 @@ def test_succseful_create_chat_from_chat_json(json_chat, chats_parser):
 # invalid chat json
 def test_failed_create_chat_from_chat_json(json_chat, chats_parser):
     try:
-        json_chat = json_chat.pop("name")
-        chat = chats_parser.create_chat(json_chat)
-    except Exception as e:
+        json_chat.pop("name")
+        chats_parser.create_chat(json_chat)
+    except KeyError as e:
         assert str(e) == CHAT_ERROR_PARSING
 
 
