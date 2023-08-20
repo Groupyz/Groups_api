@@ -32,6 +32,6 @@ class ChatParser:
                 user_id=self.user_id,
             )
         except Exception as e:
-            raise Exception(f"{ERROR_PARSING} {str(e)}")
+            raise Exception(CHAT_ERROR_PARSING)
 
         return chat

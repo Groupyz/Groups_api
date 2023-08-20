@@ -3,7 +3,7 @@ import json
 import os
 from flask_sqlalchemy import SQLAlchemy
 from app import db, app
-from chat_parser.chat_parser import ChatParser
+from chat_parser.chat_parser import ChatParser, CHAT_ERROR_PARSING
 from chat_parser.parser_data_classes import Summary, Chat
 from DB.models import Groups
 
@@ -85,9 +85,10 @@ def test_succseful_create_chat_from_chat_json(json_chat, chats_parser):
 # invalid chat json
 def test_failed_create_chat_from_chat_json(json_chat, chats_parser):
     try:
+        json_chat = json_chat.pop("name")
         chat = chats_parser.create_chat(json_chat)
     except Exception as e:
-        assert e == INVALID_JSON
+        assert str(e) == CHAT_ERROR_PARSING
 
 
 # Test creates DB records from chats data class
