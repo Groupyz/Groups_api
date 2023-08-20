@@ -22,9 +22,16 @@ def chats_json():
 
 @pytest.fixture(scope="session")
 def chats_parser(chats_json):
-    DUMMY_USER_ID = "your_dummy_user_id"  # Replace with your dummy user ID
     parser = ChatParser(chats_json, DUMMY_USER_ID)
     return parser
+
+
+@pytest.fixture(scope="session")
+def json_chat():
+    file_path = os.path.join(os.path.dirname(__file__), "dummy_chat.json")
+    with open(file_path) as json_file:
+        data = json.load(json_file)
+    return data
 
 
 # Tests that file is retrived & valid
@@ -71,7 +78,8 @@ def test_chat_data_class_creation(chats_parser):
 def test_succseful_create_chat_from_chat_json(json_chat, chats_parser):
     chat = chats_parser.create_chat(json_chat)
     assert chat.user_id == DUMMY_USER_ID
-    assert chat.group_id == json_chat["group_id"]
+    assert chat.group_id == json_chat.get("id").get("_serialized")
+    assert chat.group_name == json_chat.get("name")
 
 
 # invalid chat json
