@@ -66,7 +66,7 @@ def test_same_user_diff_groups():
 
 def test_same_users_same_groups():
     with app.app_context():
-        with pytest.raises(Exception):
+        with pytest.raises(Exception) as error:
             group_1 = Groups(user_id=generate_id(), group_id=30, group_name="Surviving the Sadna!")
             
             group_2 = Groups(user_id=group_1.user_id, group_id=30, group_name="Surviving the Sadna!")
@@ -74,6 +74,8 @@ def test_same_users_same_groups():
             db.session.add(group_1)
             db.session.add(group_2)
             db.session.commit()
+
+            assert "duplicate key" in error
 
             
 
