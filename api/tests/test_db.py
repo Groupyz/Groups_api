@@ -41,3 +41,45 @@ def create_test_data():
         user_id=generate_id(), group_id=1, group_name="Surviving the Sadna!"
     )
     return new_data
+
+
+# these tests are for testing the primary key, which is: user_id + group_id
+def test_same_user_diff_groups():
+    with app.app_context():
+        group_1 = Groups(user_id=generate_id(), group_id=10, group_name="Surviving the Sadna!")
+        
+        group_2 = Groups(user_id=group_1.user_id, group_id=20, group_name="Surviving the Sadna!")
+
+        db.session.add(group_1)
+        db.session.add(group_2)
+        db.session.commit()
+
+        group_1_data = Groups.query.filter_by(group_id=10)
+        group_2_data = Groups.query.filter_by(group_id=20)
+
+        db.session.delete(group_1)
+        db.session.delete(group_2)
+        db.session.commit()
+
+        assert (group_1_data and group_2_data) is not None
+
+
+def test_same_users_same_groups():
+    with app.app_context():
+        with pytest.raises(Exception) as error:
+            group_1 = Groups(user_id=generate_id(), group_id=30, group_name="Surviving the Sadna!")
+            
+            group_2 = Groups(user_id=group_1.user_id, group_id=30, group_name="Surviving the Sadna!")
+
+            db.session.add(group_1)
+            db.session.add(group_2)
+            db.session.commit()
+
+            assert "duplicate key" in error
+
+            
+
+       
+
+
+
