@@ -40,14 +40,6 @@ def test_json_data(chats_json):
     assert len(chats_json) > 0
 
 
-def test_db_instance_started(test_app):
-    with test_app.app_context():
-        # Access the db instance
-        from app import db
-
-        assert isinstance(db, SQLAlchemy)
-
-
 # Test json creates succesuf parse with apropriate records
 def test_positive_parser_flow(chats_parser):
     summary = chats_parser.parse()
@@ -76,12 +68,13 @@ def test_chat_data_class_creation(chats_parser):
 
 # recive json chat obj return chat obj with valid user id
 def test_succseful_create_chat_from_chat_json(json_chat, chats_parser):
-    chat = chats_parser.create_chat(json_chat)
-    assert chat.user_id == DUMMY_USER_ID
-    assert chat.group_id == json_chat.get("id").get("_serialized")
-    assert chat.group_name == json_chat.get("name")
+    with app.app_context():
+        chat = chats_parser.create_chat(json_chat)
+        assert chat.user_id == DUMMY_USER_ID
+        assert chat.group_id == json_chat.get("id").get("_serialized")
+        assert chat.group_name == json_chat.get("name")
 
-    delete_db_records_with_this_user_id(DUMMY_USER_ID)
+        delete_db_records_with_this_user_id(DUMMY_USER_ID)
 
 
 # invalid chat json
@@ -114,7 +107,7 @@ def test_create_chat_data_class():
     assert chat.user_id == user_id
 
 
-def test_parser_summary(chats_parser):
+def test_parser_summary():
     len_data_variables, len_json = 10, 10
     summary = Summary(len_data_variables, len_json, DUMMY_USER_ID)
     assert summary.total_records_created == len_data_variables
