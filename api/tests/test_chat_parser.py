@@ -81,6 +81,8 @@ def test_succseful_create_chat_from_chat_json(json_chat, chats_parser):
     assert chat.group_id == json_chat.get("id").get("_serialized")
     assert chat.group_name == json_chat.get("name")
 
+    delete_db_records_with_this_user_id(DUMMY_USER_ID)
+
 
 # invalid chat json
 def test_failed_create_chat_from_chat_json(json_chat, chats_parser):
@@ -98,6 +100,8 @@ def test_create_db_record_from_chat_class(chats_parser):
         chats_parser.create_db_records(chats)
         records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
         assert len(records_with_user_id) == len(chats)
+
+        delete_db_records_with_this_user_id(DUMMY_USER_ID)
 
 
 def test_create_chat_data_class():
@@ -139,3 +143,10 @@ def create_dummy_chat_data_class(**kwargs):
     chat = Chat(**default)
 
     return chat
+
+
+def delete_db_records_with_this_user_id(user_id: str):
+    records_with_user_id = Groups.query.filter_by(user_id=user_id).all()
+    for record in records_with_user_id:
+        db.session.delete(record)
+    db.session.commit()
