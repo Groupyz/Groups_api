@@ -60,7 +60,7 @@ def test_negative_parser_flow(chats_json):
 
 
 # check that for each json obj an data class 'chats' instance is create with valid data
-def test_chat_data_class_creation(chats_parser):
+def test_chat_data_class_creation(chats_parser, chats_json):
     chats = chats_parser.create_chats()
     assert len(chats) == len(chats_json)
     assert chats[0].user_id == DUMMY_USER_ID
@@ -89,7 +89,7 @@ def test_failed_create_chat_from_chat_json(json_chat, chats_parser):
 # Test creates DB records from chats data class
 def test_create_db_record_from_chat_class(chats_parser):
     with app.app_context():
-        chats = create_multiple_chats(num_records=1)
+        chats = create_multiple_chats(num_records=10)
         chats_parser.create_db_records(chats)
         records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
         assert len(records_with_user_id) == len(chats)
