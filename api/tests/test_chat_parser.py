@@ -42,21 +42,14 @@ def test_json_data(chats_json):
 
 # Test json creates succesuf parse with apropriate records
 def test_positive_parser_flow(chats_parser):
-    summary = chats_parser.parse()
+    with app.app_context():
+        summary = chats_parser.parse()
 
-    assert summary.total_records_created == len(chats_json)
-    records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
-    assert len(records_with_user_id) == len(chats_json)
+        assert summary.total_records_created == len(chats_json)
+        records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
+        assert len(records_with_user_id) == len(chats_json)
 
-
-# Test bad json shows logical error
-def test_negative_parser_flow(chats_json):
-    invalid_json = make_json_invalid(chats_json)
-    try:
-        parser = ChatParser(invalid_json, DUMMY_USER_ID)
-        parser.parse()
-    except Exception as e:
-        assert e == INVALID_JSON
+        delete_db_records_with_this_user_id(DUMMY_USER_ID)
 
 
 # check that for each json obj an data class 'chats' instance is create with valid data

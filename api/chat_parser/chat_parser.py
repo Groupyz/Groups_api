@@ -12,6 +12,13 @@ class ChatParser:
         self.user_id = user_id
         self.chats_json = chats_json
 
+    def parse(self) -> Summary:
+        self.chats = self.create_chats()
+        created_groups = self.create_db_records(self.chats)
+        self.summary = Summary(len(self.chats), len(self.chats_json), self.user_id)
+
+        return self.summary
+
     def create_chats(self) -> list[Chat]:
         self.chats = []
         for json_chat in self.chats_json:
