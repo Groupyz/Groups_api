@@ -7,8 +7,7 @@ from chat_parser.chat_parser import ChatParser, CHAT_ERROR_PARSING
 from chat_parser.parser_data_classes import Summary, Chat
 from DB.models import Groups
 
-# TODO: make dynamic
-INVALID_JSON = "invalid json"
+
 DUMMY_USER_ID = "123456789"
 
 
@@ -41,7 +40,7 @@ def test_json_data(chats_json):
 
 
 # Test json creates succesuf parse with apropriate records
-def test_positive_parser_flow(chats_parser):
+def test_positive_parser_flow(chats_parser, chats_json):
     with app.app_context():
         summary = chats_parser.parse()
 
@@ -52,7 +51,6 @@ def test_positive_parser_flow(chats_parser):
         delete_db_records_with_this_user_id(DUMMY_USER_ID)
 
 
-# check that for each json obj an data class 'chats' instance is create with valid data
 def test_chat_data_class_creation(chats_parser, chats_json):
     chats = chats_parser.create_chats()
     assert len(chats) == len(chats_json)
