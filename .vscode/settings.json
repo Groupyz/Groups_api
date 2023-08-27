@@ -2,6 +2,10 @@
     "python.pythonPath": "api/.venv/bin/python3",
     "python.linting.pycodestyleEnabled": true,
     "python.linting.pylintEnabled": true,
-    "python.formatting.provider": "black",
-    "[python]": {"editor.formatOnSave": true}
+    "python.formatting.provider": "none",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "github.copilot.inlineSuggest.enable": true
 }
