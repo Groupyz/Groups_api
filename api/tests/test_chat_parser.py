@@ -1,11 +1,16 @@
 import pytest
 import json
 import os
-from flask_sqlalchemy import SQLAlchemy
-from app import db, app
-from chat_parser.chat_parser import ChatParser, CHAT_ERROR_PARSING
-from chat_parser.parser_data_classes import Summary, Chat
+from app import db
+from chat_parser.parser_data_classes import Chat
 from DB.models import Groups
+from chat_parser.filterer import GroupJsonFilterer
+from chat_parser.specification import GroupSpecification
+from chat_parser.chat_parser import (
+    JsonToGroupDCConverter,
+    GroupDCToDBRecsConverter,
+    JsonChatsToGroupConverter
+    )
 
 
 DUMMY_USER_ID = "123456789"
@@ -13,79 +18,66 @@ DUMMY_USER_ID = "123456789"
 
 @pytest.fixture(scope="session")
 def chats_json():
-    file_path = os.path.join(os.path.dirname(__file__), "dummy_chats.json")
+    file_path = os.path.join(os.path.dirname(__file__), "groups_and_private.json")
+    with open(file_path) as json_file:
+        data = json.load(json_file)
+    return data
+
+@pytest.fixture(scope="session")
+def only_group_chats_json():
+    file_path = os.path.join(os.path.dirname(__file__), "dummy_group_chat.json")
+    with open(file_path) as json_file:
+        data = json.load(json_file)
+    return data
+
+@pytest.fixture(scope="session")
+def private_json_chat():
+    file_path = os.path.join(os.path.dirname(__file__), "dummy_private_chat.json")
     with open(file_path) as json_file:
         data = json.load(json_file)
     return data
 
 
-@pytest.fixture(scope="session")
-def chats_parser(chats_json):
-    parser = ChatParser(chats_json, DUMMY_USER_ID)
-    return parser
+def test_json_to_group_converter(chats_json):
+    converter = JsonChatsToGroupConverter(DUMMY_USER_ID)
+    db_recs = converter.convert(chats_json)
+    records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
+
+    assert len(db_recs) == len(chats_json) == len(records_with_user_id)
+
+    delete_db_records_with_this_user_id(DUMMY_USER_ID)
 
 
-@pytest.fixture(scope="session")
-def json_chat():
-    file_path = os.path.join(os.path.dirname(__file__), "dummy_chat.json")
-    with open(file_path) as json_file:
-        data = json.load(json_file)
-    return data
+def test_dc_to_db_recs_converter():
+    dc_recs = create_multiple_chats(10)
+
+    converter = GroupDCToDBRecsConverter()
+    db_recs = converter.convert(dc_recs)
+
+    assert len(db_recs) == len(dc_recs)
+    if len(db_recs) > 0: assert db_recs[0].user_id == DUMMY_USER_ID
 
 
-# Tests that file is retrived & valid
-def test_json_data(chats_json):
-    assert isinstance(chats_json, list)
-    assert len(chats_json) > 0
+def test_json_to_data_class_converter(only_group_chats_json):
+    converter = JsonToGroupDCConverter(DUMMY_USER_ID)
+    dc_recs = converter.convert(only_group_chats_json)
+
+    assert len(dc_recs) == len(only_group_chats_json)
+    if len(dc_recs) > 0: assert dc_recs[0].user_id == DUMMY_USER_ID
 
 
-# Test json creates succesuf parse with apropriate records
-def test_positive_parser_flow(chats_parser, chats_json):
-    with app.app_context():
-        summary = chats_parser.parse()
+def test_group_chat_filterer(chats_json):
+    filterer = GroupJsonFilterer()
+    filtered_json = filterer.filter(chats_json)
 
-        assert summary.total_records_created == len(chats_json)
-        records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
-        assert len(records_with_user_id) == len(chats_json)
-
-        delete_db_records_with_this_user_id(DUMMY_USER_ID)
+    assert len(filtered_json) == 2
 
 
-def test_chat_data_class_creation(chats_parser, chats_json):
-    chats = chats_parser.create_chats()
-    assert len(chats) == len(chats_json)
-    assert chats[0].user_id == DUMMY_USER_ID
+def test_group_specification(private_json_chat, only_group_chats_json):
+    specifictaion = GroupSpecification()
 
-
-# recive json chat obj return chat obj with valid user id
-def test_succseful_create_chat_from_chat_json(json_chat, chats_parser):
-    with app.app_context():
-        chat = chats_parser.create_chat(json_chat)
-        assert chat.user_id == DUMMY_USER_ID
-        assert chat.group_id == json_chat.get("id").get("_serialized")
-        assert chat.group_name == json_chat.get("name")
-
-        delete_db_records_with_this_user_id(DUMMY_USER_ID)
-
-
-# invalid chat json
-def test_failed_create_chat_from_chat_json(json_chat, chats_parser):
-    try:
-        json_chat.pop("name")
-        chats_parser.create_chat(json_chat)
-    except KeyError as e:
-        assert str(e) == CHAT_ERROR_PARSING
-
-
-# Test creates DB records from chats data class
-def test_create_db_record_from_chat_class(chats_parser):
-    with app.app_context():
-        chats = create_multiple_chats(num_records=10)
-        chats_parser.create_db_records(chats)
-        records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
-        assert len(records_with_user_id) == len(chats)
-
-        delete_db_records_with_this_user_id(DUMMY_USER_ID)
+    assert False == specifictaion.is_satisfied_by(private_json_chat)
+    assert True == specifictaion.is_satisfied_by(only_group_chats_json)
 
 
 def test_create_chat_data_class():
@@ -96,14 +88,6 @@ def test_create_chat_data_class():
     assert chat.group_id == group_id
     assert chat.group_name == gorup_name
     assert chat.user_id == user_id
-
-
-def test_parser_summary():
-    len_data_variables, len_json = 10, 10
-    summary = Summary(len_data_variables, len_json, DUMMY_USER_ID)
-    assert summary.total_records_created == len_data_variables
-    assert summary.total_records_failed == 0
-    assert summary.user_id == DUMMY_USER_ID
 
 
 def create_multiple_chats(num_records):
