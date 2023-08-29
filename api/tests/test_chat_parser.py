@@ -14,7 +14,7 @@ from chatParser.chat_parser import (
 
 
 
-DUMMY_USER_ID = "123456789"
+DUMMY_USER_ID = 123456789
 
 
 
