@@ -1,39 +1,40 @@
-{
-  "id": {
-      "server": "c.us",
-      "user": "972502813201",
-      "_serialized": "972502813201@c.us"
-  },
-  "name": "+972 50-281-3201",
-  "isGroup": false,
-  "unreadCount": 0,
-  "timestamp": 1690820292,
-  "archived": false,
-  "pinned": true,
-  "isMuted": false,
-  "muteExpiration": 0,
-  "lastMessage": {
-      "_data": {
+[
+    {
+      "id": {
+        "server": "c.us",
+        "user": "972502813201",
+        "_serialized": "972502813201@c.us"
+      },
+      "name": "+972 50-281-3201",
+      "isGroup": false,
+      "unreadCount": 0,
+      "timestamp": 1690820292,
+      "archived": false,
+      "pinned": true,
+      "isMuted": false,
+      "muteExpiration": 0,
+      "lastMessage": {
+        "_data": {
           "id": {
-              "fromMe": true,
-              "remote": "972502813201@c.us",
-              "id": "3AD152B5118E83A0DF53",
-              "self": "out",
-              "_serialized": "true_972502813201@c.us_3AD152B5118E83A0DF53_out"
+            "fromMe": true,
+            "remote": "972502813201@c.us",
+            "id": "3AD152B5118E83A0DF53",
+            "self": "out",
+            "_serialized": "true_972502813201@c.us_3AD152B5118E83A0DF53_out"
           },
           "body": "",
           "type": "image",
           "t": 1690820292,
           "notifyName": "",
           "from": {
-              "server": "c.us",
-              "user": "972502813201",
-              "_serialized": "972502813201@c.us"
+            "server": "c.us",
+            "user": "972502813201",
+            "_serialized": "972502813201@c.us"
           },
           "to": {
-              "server": "c.us",
-              "user": "972502813201",
-              "_serialized": "972502813201@c.us"
+            "server": "c.us",
+            "user": "972502813201",
+            "_serialized": "972502813201@c.us"
           },
           "self": "out",
           "ack": 3,
@@ -54,10 +55,10 @@
           "height": 1200,
           "staticUrl": "",
           "scanLengths": [
-              10058,
-              33532,
-              18019,
-              56003
+            10058,
+            33532,
+            18019,
+            56003
           ],
           "scansSidecar": {},
           "isFromTemplate": false,
@@ -72,9 +73,9 @@
           "labels": [],
           "hasReaction": false,
           "originalSelfAuthor": {
-              "server": "c.us",
-              "user": "972502813201",
-              "_serialized": "972502813201@c.us"
+            "server": "c.us",
+            "user": "972502813201",
+            "_serialized": "972502813201@c.us"
           },
           "productHeaderImageRejected": false,
           "lastPlaybackProgress": 0,
@@ -86,33 +87,34 @@
           "requiresDirectConnection": false,
           "invokedBotWid": null,
           "links": []
-      },
-      "mediaKey": "hLbFsqrAOibN2hOCNQUyND6COj1L3iUqU2k14hO5CFw=",
-      "id": {
+        },
+        "mediaKey": "hLbFsqrAOibN2hOCNQUyND6COj1L3iUqU2k14hO5CFw=",
+        "id": {
           "fromMe": true,
           "remote": "972502813201@c.us",
           "id": "3AD152B5118E83A0DF53",
           "self": "out",
           "_serialized": "true_972502813201@c.us_3AD152B5118E83A0DF53_out"
-      },
-      "ack": 3,
-      "hasMedia": true,
-      "body": "",
-      "type": "image",
-      "timestamp": 1690820292,
-      "from": "972502813201@c.us",
-      "to": "972502813201@c.us",
-      "deviceType": "ios",
-      "isForwarded": false,
-      "forwardingScore": 0,
-      "isStatus": false,
-      "isStarred": false,
-      "fromMe": true,
-      "hasQuotedMsg": false,
-      "hasReaction": false,
-      "vCards": [],
-      "mentionedIds": [],
-      "isGif": false,
-      "links": []
-  }
-}
+        },
+        "ack": 3,
+        "hasMedia": true,
+        "body": "",
+        "type": "image",
+        "timestamp": 1690820292,
+        "from": "972502813201@c.us",
+        "to": "972502813201@c.us",
+        "deviceType": "ios",
+        "isForwarded": false,
+        "forwardingScore": 0,
+        "isStatus": false,
+        "isStarred": false,
+        "fromMe": true,
+        "hasQuotedMsg": false,
+        "hasReaction": false,
+        "vCards": [],
+        "mentionedIds": [],
+        "isGif": false,
+        "links": []
+      }
+    }
+  ]

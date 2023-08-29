@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 
 
-class Specification(ABC):
 
+class Specification(ABC):
 
     @abstractmethod
     def is_satisfied(self, item):

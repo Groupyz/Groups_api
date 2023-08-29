@@ -1,88 +1,147 @@
-{
-  "groupMetadata": {
+[
+  {
+    "groupMetadata": {
+      "id": {
+        "server": "g.us",
+        "user": "120363028594091331",
+        "_serialized": "120363028594091331@g.us"
+      },
+      "creation": 1667849276,
+      "owner": {
+        "server": "c.us",
+        "user": "972502813201",
+        "_serialized": "972502813201@c.us"
+      },
+      "subject": "שורדים את הסדנה 🌎👾💻",
+      "desc": "*קליקאפ-*\nhttps://app.clickup.com/42653728/v/li/222707960    \n*קישור Git-*                         \nhttps://github.com/ndvisme/PigeonUtils/tree/main\n*עיצוב UI-* \nhttps://www.figma.com/file/ruvGu8XDLHK6gOhztOv8pY/Groupy?node-id=0%3A1&t=0zOxTDksGXKRQVlc-1\n\n*דרייב לקבצים-*\nhttps://drive.google.com/drive/folders/1ixCL955UXWOb1LY37cb2V9G9sLBhlkwe?usp=sharing\n\n*אתר הפרויקטים-*\n*סיסמא - ProjectAdmin*\nhttps://www.projects.mta.ac.il/projectud/6a922f0c-d2ea-464e-9fc3-ba5b48bf9068",
+      "descId": "1690100839-57",
+      "descTime": 1690103399,
+      "descOwner": {
+        "server": "c.us",
+        "user": "972523668151",
+        "_serialized": "972523668151@c.us"
+      },
+      "restrict": false,
+      "announce": false,
+      "noFrequentlyForwarded": false,
+      "ephemeralDuration": 0,
+      "membershipApprovalMode": false,
+      "reportToAdminMode": false,
+      "support": false,
+      "suspended": false,
+      "terminated": false,
+      "uniqueShortNameMap": {},
+      "isParentGroup": false,
+      "isParentGroupClosed": false,
+      "defaultSubgroup": false,
+      "lastReportToAdminTimestamp": null,
+      "incognito": false,
+      "participants": [
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502813201",
+            "_serialized": "972502813201@c.us"
+          },
+          "isAdmin": true,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972523668151",
+            "_serialized": "972523668151@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972542382305",
+            "_serialized": "972542382305@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        }
+      ],
+      "pendingParticipants": [],
+      "pastParticipants": [],
+      "membershipApprovalRequests": [],
+      "subgroupSuggestions": []
+    },
     "id": {
       "server": "g.us",
       "user": "120363028594091331",
       "_serialized": "120363028594091331@g.us"
     },
-    "creation": 1667849276,
-    "owner": {
-      "server": "c.us",
-      "user": "972502813201",
-      "_serialized": "972502813201@c.us"
-    },
-    "subject": "שורדים את הסדנה 🌎👾💻",
-    "desc": "*קליקאפ-*\nhttps://app.clickup.com/42653728/v/li/222707960    \n*קישור Git-*                         \nhttps://github.com/ndvisme/PigeonUtils/tree/main\n*עיצוב UI-* \nhttps://www.figma.com/file/ruvGu8XDLHK6gOhztOv8pY/Groupy?node-id=0%3A1&t=0zOxTDksGXKRQVlc-1\n\n*דרייב לקבצים-*\nhttps://drive.google.com/drive/folders/1ixCL955UXWOb1LY37cb2V9G9sLBhlkwe?usp=sharing\n\n*אתר הפרויקטים-*\n*סיסמא - ProjectAdmin*\nhttps://www.projects.mta.ac.il/projectud/6a922f0c-d2ea-464e-9fc3-ba5b48bf9068",
-    "descId": "1690100839-57",
-    "descTime": 1690103399,
-    "descOwner": {
-      "server": "c.us",
-      "user": "972523668151",
-      "_serialized": "972523668151@c.us"
-    },
-    "restrict": false,
-    "announce": false,
-    "noFrequentlyForwarded": false,
-    "ephemeralDuration": 0,
-    "membershipApprovalMode": false,
-    "reportToAdminMode": false,
-    "support": false,
-    "suspended": false,
-    "terminated": false,
-    "uniqueShortNameMap": {},
-    "isParentGroup": false,
-    "isParentGroupClosed": false,
-    "defaultSubgroup": false,
-    "lastReportToAdminTimestamp": null,
-    "incognito": false,
-    "participants": [
-      {
+    "name": "שורדים את הסדנה 🌎👾💻",
+    "isGroup": true,
+    "unreadCount": 0,
+    "timestamp": 1690963124,
+    "pinned": false,
+    "isMuted": false,
+    "muteExpiration": 0,
+    "lastMessage": {
+      "_data": {
         "id": {
+          "fromMe": false,
+          "remote": "120363028594091331@g.us",
+          "id": "3A9AA907A5A4F27B11F3",
+          "participant": {
+            "server": "c.us",
+            "user": "972523668151",
+            "_serialized": "972523668151@c.us"
+          },
+          "_serialized": "false_120363028594091331@g.us_3A9AA907A5A4F27B11F3_972523668151@c.us"
+        },
+        "body": "אה הבנתי, אז אולי באמת תעשי את זה סטטי כרגע כדי לראות שזה עובד כמו שאת מצפה",
+        "type": "chat",
+        "t": 1690963124,
+        "notifyName": "",
+        "from": {
+          "server": "g.us",
+          "user": "120363028594091331",
+          "_serialized": "120363028594091331@g.us"
+        },
+        "to": {
           "server": "c.us",
           "user": "972502813201",
           "_serialized": "972502813201@c.us"
         },
-        "isAdmin": true,
-        "isSuperAdmin": false
-      },
-      {
-        "id": {
+        "author": {
           "server": "c.us",
           "user": "972523668151",
           "_serialized": "972523668151@c.us"
         },
-        "isAdmin": false,
-        "isSuperAdmin": false
+        "self": "in",
+        "ack": 0,
+        "invis": false,
+        "star": false,
+        "kicNotified": false,
+        "isFromTemplate": false,
+        "pollInvalidated": false,
+        "isSentCagPollCreation": false,
+        "latestEditMsgKey": null,
+        "latestEditSenderTimestampMs": null,
+        "broadcast": false,
+        "mentionedJidList": [],
+        "groupMentions": [],
+        "isVcardOverMmsDocument": false,
+        "isForwarded": false,
+        "labels": [],
+        "hasReaction": false,
+        "productHeaderImageRejected": false,
+        "lastPlaybackProgress": 0,
+        "isDynamicReplyButtonsMsg": false,
+        "isMdHistoryMsg": true,
+        "stickerSentTs": 0,
+        "isAvatar": false,
+        "lastUpdateFromServerTs": 0,
+        "requiresDirectConnection": false,
+        "invokedBotWid": null,
+        "links": []
       },
-      {
-        "id": {
-          "server": "c.us",
-          "user": "972542382305",
-          "_serialized": "972542382305@c.us"
-        },
-        "isAdmin": false,
-        "isSuperAdmin": false
-      }
-    ],
-    "pendingParticipants": [],
-    "pastParticipants": [],
-    "membershipApprovalRequests": [],
-    "subgroupSuggestions": []
-  },
-  "id": {
-    "server": "g.us",
-    "user": "120363028594091331",
-    "_serialized": "120363028594091331@g.us"
-  },
-  "name": "שורדים את הסדנה 🌎👾💻",
-  "isGroup": true,
-  "unreadCount": 0,
-  "timestamp": 1690963124,
-  "pinned": false,
-  "isMuted": false,
-  "muteExpiration": 0,
-  "lastMessage": {
-    "_data": {
       "id": {
         "fromMe": false,
         "remote": "120363028594091331@g.us",
@@ -94,84 +153,27 @@
         },
         "_serialized": "false_120363028594091331@g.us_3A9AA907A5A4F27B11F3_972523668151@c.us"
       },
+      "ack": 0,
+      "hasMedia": false,
       "body": "אה הבנתי, אז אולי באמת תעשי את זה סטטי כרגע כדי לראות שזה עובד כמו שאת מצפה",
       "type": "chat",
-      "t": 1690963124,
-      "notifyName": "",
-      "from": {
-        "server": "g.us",
-        "user": "120363028594091331",
-        "_serialized": "120363028594091331@g.us"
-      },
-      "to": {
-        "server": "c.us",
-        "user": "972502813201",
-        "_serialized": "972502813201@c.us"
-      },
-      "author": {
-        "server": "c.us",
-        "user": "972523668151",
-        "_serialized": "972523668151@c.us"
-      },
-      "self": "in",
-      "ack": 0,
-      "invis": false,
-      "star": false,
-      "kicNotified": false,
-      "isFromTemplate": false,
-      "pollInvalidated": false,
-      "isSentCagPollCreation": false,
-      "latestEditMsgKey": null,
-      "latestEditSenderTimestampMs": null,
-      "broadcast": false,
-      "mentionedJidList": [],
-      "groupMentions": [],
-      "isVcardOverMmsDocument": false,
+      "timestamp": 1690963124,
+      "from": "120363028594091331@g.us",
+      "to": "972502813201@c.us",
+      "author": "972523668151@c.us",
+      "deviceType": "ios",
       "isForwarded": false,
-      "labels": [],
-      "hasReaction": false,
-      "productHeaderImageRejected": false,
-      "lastPlaybackProgress": 0,
-      "isDynamicReplyButtonsMsg": false,
-      "isMdHistoryMsg": true,
-      "stickerSentTs": 0,
-      "isAvatar": false,
-      "lastUpdateFromServerTs": 0,
-      "requiresDirectConnection": false,
-      "invokedBotWid": null,
-      "links": []
-    },
-    "id": {
+      "forwardingScore": 0,
+      "isStatus": false,
+      "isStarred": false,
+      "broadcast": false,
       "fromMe": false,
-      "remote": "120363028594091331@g.us",
-      "id": "3A9AA907A5A4F27B11F3",
-      "participant": {
-        "server": "c.us",
-        "user": "972523668151",
-        "_serialized": "972523668151@c.us"
-      },
-      "_serialized": "false_120363028594091331@g.us_3A9AA907A5A4F27B11F3_972523668151@c.us"
-    },
-    "ack": 0,
-    "hasMedia": false,
-    "body": "אה הבנתי, אז אולי באמת תעשי את זה סטטי כרגע כדי לראות שזה עובד כמו שאת מצפה",
-    "type": "chat",
-    "timestamp": 1690963124,
-    "from": "120363028594091331@g.us",
-    "to": "972502813201@c.us",
-    "author": "972523668151@c.us",
-    "deviceType": "ios",
-    "isForwarded": false,
-    "forwardingScore": 0,
-    "isStatus": false,
-    "isStarred": false,
-    "broadcast": false,
-    "fromMe": false,
-    "hasQuotedMsg": false,
-    "hasReaction": false,
-    "vCards": [],
-    "mentionedIds": [],
-    "isGif": false,
-    "links": []
+      "hasQuotedMsg": false,
+      "hasReaction": false,
+      "vCards": [],
+      "mentionedIds": [],
+      "isGif": false,
+      "links": []
+    }
   }
-}
+]

@@ -1,19 +1,21 @@
 import pytest
 import json
 import os
-from app import db
-from chat_parser.parser_data_classes import Chat
+from app import db, app
+from chatParser.parser_data_classes import Chat
 from DB.models import Groups
-from chat_parser.filterer import GroupJsonFilterer
-from chat_parser.specification import GroupSpecification
-from chat_parser.chat_parser import (
+from chatParser.filterer import GroupJsonFilterer
+from chatParser.specification import GroupJsonSpecification
+from chatParser.chat_parser import (
     JsonToGroupDCConverter,
     GroupDCToDBRecsConverter,
     JsonChatsToGroupConverter
     )
 
 
+
 DUMMY_USER_ID = "123456789"
+
 
 
 @pytest.fixture(scope="session")
@@ -38,14 +40,17 @@ def private_json_chat():
     return data
 
 
+
 def test_json_to_group_converter(chats_json):
-    converter = JsonChatsToGroupConverter(DUMMY_USER_ID)
-    db_recs = converter.convert(chats_json)
-    records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
+    with app.app_context():
+        converter = JsonChatsToGroupConverter(DUMMY_USER_ID)
+        db_recs = converter.convert(chats_json)
+        records_with_user_id = Groups.query.filter_by(user_id=DUMMY_USER_ID).all()
 
-    assert len(db_recs) == len(chats_json) == len(records_with_user_id)
+        delete_db_records_with_this_user_id(DUMMY_USER_ID)
 
-    delete_db_records_with_this_user_id(DUMMY_USER_ID)
+        assert len(db_recs) == len(records_with_user_id)
+
 
 
 def test_dc_to_db_recs_converter():
@@ -74,10 +79,10 @@ def test_group_chat_filterer(chats_json):
 
 
 def test_group_specification(private_json_chat, only_group_chats_json):
-    specifictaion = GroupSpecification()
+    specifictaion = GroupJsonSpecification()
 
-    assert False == specifictaion.is_satisfied_by(private_json_chat)
-    assert True == specifictaion.is_satisfied_by(only_group_chats_json)
+    assert False == specifictaion.is_satisfied(private_json_chat[0])
+    assert True == specifictaion.is_satisfied(only_group_chats_json[0])
 
 
 def test_create_chat_data_class():
@@ -88,6 +93,7 @@ def test_create_chat_data_class():
     assert chat.group_id == group_id
     assert chat.group_name == gorup_name
     assert chat.user_id == user_id
+
 
 
 def create_multiple_chats(num_records):

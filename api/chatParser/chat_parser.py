@@ -1,16 +1,17 @@
-from chat_parser.parser_data_classes import Chat
-from DB.models import Groups
-from app import db
 from abc import ABC, abstractmethod
-from filterer import GroupJsonFilterer
+from app import db
+from DB.models import Groups
+from chatParser.parser_data_classes import Chat
+from chatParser.filterer import GroupJsonFilterer
+
 
 
 ERROR_PARSING = "Error while parsing: "
 CHAT_ERROR_PARSING = ERROR_PARSING + "Error while parsing specific chat."
 
 
-class ParserCoverter(ABC):
 
+class ParserCoverter(ABC):
 
     @abstractmethod
     def convert(self, items) -> list:
@@ -19,13 +20,11 @@ class ParserCoverter(ABC):
 
 class JsonChatsToGroupConverter(ParserCoverter):
 
-
     def __init__(self, user_id:str) -> None:
         super().__init__()
         self.filterer = GroupJsonFilterer()
         self.json_to_dc = JsonToGroupDCConverter(user_id)
         self.dc_to_db_recs = GroupDCToDBRecsConverter()
-
 
     def convert(self, group_chats: dict) -> list[Groups]:
         only_group = self.filterer.filter(group_chats)
@@ -40,10 +39,8 @@ class JsonChatsToGroupConverter(ParserCoverter):
 
 class JsonToGroupDCConverter(ParserCoverter):
 
-
     def __init__(self, user_id : str) -> None:
         self.user_id = user_id
-
 
     def convert(self, group_chats: dict) -> list[Chat]:
         dc_chats = []
@@ -53,12 +50,12 @@ class JsonToGroupDCConverter(ParserCoverter):
 
         return dc_chats
 
-
     def create_dc_from(self, json_chat: dict) -> Chat:
         try:
+            chat_meta_data = json_chat.get("groupMetadata")
             dc_chat = Chat(
-                group_id=json_chat.get("groupMetadata").get("_serialized"),
-                group_name=json_chat.get("subject"),
+                group_id=chat_meta_data.get("id").get("_serialized"),
+                group_name=chat_meta_data.get("subject"),
                 user_id= self.user_id,
             )
         except KeyError:
@@ -68,7 +65,6 @@ class JsonToGroupDCConverter(ParserCoverter):
 
 
 class GroupDCToDBRecsConverter(ParserCoverter):
-
 
     def convert(self, dc_chats: list[Chat]) -> list[Groups]:
         db_groups = []

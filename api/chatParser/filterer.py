@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from specification import GroupJsonSpecification
+from chatParser.specification import GroupJsonSpecification
 
 
 class ChatsJsonFilterer(ABC):
