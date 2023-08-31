@@ -81,7 +81,7 @@ def test_same_users_same_groups():
 def test_group_id_type():
      with app.app_context():
         try:
-            group = Groups(user_id=generate_id(), group_id=40, group_name="Surviving the Sadna!")
+            group = Groups(user_id=generate_id(), group_id="40", group_name="Surviving the Sadna!")
             
             db.session.add(group)
             db.session.commit()
@@ -90,12 +90,5 @@ def test_group_id_type():
             assert "group_id" in str(error)
           
   
-
-
-            
-            
-
-       
-
 
 
