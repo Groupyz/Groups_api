@@ -1,0 +1,2132 @@
+[
+  {
+    "groupMetadata": {
+      "id": {
+        "server": "g.us",
+        "user": "120363028594091331",
+        "_serialized": "120363028594091331@g.us"
+      },
+      "creation": 1667849276,
+      "owner": {
+        "server": "c.us",
+        "user": "972502813201",
+        "_serialized": "972502813201@c.us"
+      },
+      "subject": "שורדים את הסדנה 🌎👾💻",
+      "desc": "*קליקאפ-*\nhttps://app.clickup.com/42653728/v/li/222707960    \n*קישור Git-*                         \nhttps://github.com/ndvisme/PigeonUtils/tree/main\n*עיצוב UI-* \nhttps://www.figma.com/file/ruvGu8XDLHK6gOhztOv8pY/Groupy?node-id=0%3A1&t=0zOxTDksGXKRQVlc-1\n\n*דרייב לקבצים-*\nhttps://drive.google.com/drive/folders/1ixCL955UXWOb1LY37cb2V9G9sLBhlkwe?usp=sharing\n\n*אתר הפרויקטים-*\n*סיסמא - ProjectAdmin*\nhttps://www.projects.mta.ac.il/projectud/6a922f0c-d2ea-464e-9fc3-ba5b48bf9068",
+      "descId": "1690100839-57",
+      "descTime": 1690103399,
+      "descOwner": {
+        "server": "c.us",
+        "user": "972523668151",
+        "_serialized": "972523668151@c.us"
+      },
+      "restrict": false,
+      "announce": false,
+      "noFrequentlyForwarded": false,
+      "ephemeralDuration": 0,
+      "membershipApprovalMode": false,
+      "reportToAdminMode": false,
+      "support": false,
+      "suspended": false,
+      "terminated": false,
+      "uniqueShortNameMap": {},
+      "isParentGroup": false,
+      "isParentGroupClosed": false,
+      "defaultSubgroup": false,
+      "lastReportToAdminTimestamp": null,
+      "incognito": false,
+      "participants": [
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502813201",
+            "_serialized": "972502813201@c.us"
+          },
+          "isAdmin": true,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972523668151",
+            "_serialized": "972523668151@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972542382305",
+            "_serialized": "972542382305@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        }
+      ],
+      "pendingParticipants": [],
+      "pastParticipants": [],
+      "membershipApprovalRequests": [],
+      "subgroupSuggestions": []
+    },
+    "id": {
+      "server": "g.us",
+      "user": "120363028594091331",
+      "_serialized": "120363028594091331@g.us"
+    },
+    "name": "שורדים את הסדנה 🌎👾💻",
+    "isGroup": true,
+    "unreadCount": 0,
+    "timestamp": 1690963124,
+    "pinned": false,
+    "isMuted": false,
+    "muteExpiration": 0,
+    "lastMessage": {
+      "_data": {
+        "id": {
+          "fromMe": false,
+          "remote": "120363028594091331@g.us",
+          "id": "3A9AA907A5A4F27B11F3",
+          "participant": {
+            "server": "c.us",
+            "user": "972523668151",
+            "_serialized": "972523668151@c.us"
+          },
+          "_serialized": "false_120363028594091331@g.us_3A9AA907A5A4F27B11F3_972523668151@c.us"
+        },
+        "body": "אה הבנתי, אז אולי באמת תעשי את זה סטטי כרגע כדי לראות שזה עובד כמו שאת מצפה",
+        "type": "chat",
+        "t": 1690963124,
+        "notifyName": "",
+        "from": {
+          "server": "g.us",
+          "user": "120363028594091331",
+          "_serialized": "120363028594091331@g.us"
+        },
+        "to": {
+          "server": "c.us",
+          "user": "972502813201",
+          "_serialized": "972502813201@c.us"
+        },
+        "author": {
+          "server": "c.us",
+          "user": "972523668151",
+          "_serialized": "972523668151@c.us"
+        },
+        "self": "in",
+        "ack": 0,
+        "invis": false,
+        "star": false,
+        "kicNotified": false,
+        "isFromTemplate": false,
+        "pollInvalidated": false,
+        "isSentCagPollCreation": false,
+        "latestEditMsgKey": null,
+        "latestEditSenderTimestampMs": null,
+        "broadcast": false,
+        "mentionedJidList": [],
+        "groupMentions": [],
+        "isVcardOverMmsDocument": false,
+        "isForwarded": false,
+        "labels": [],
+        "hasReaction": false,
+        "productHeaderImageRejected": false,
+        "lastPlaybackProgress": 0,
+        "isDynamicReplyButtonsMsg": false,
+        "isMdHistoryMsg": true,
+        "stickerSentTs": 0,
+        "isAvatar": false,
+        "lastUpdateFromServerTs": 0,
+        "requiresDirectConnection": false,
+        "invokedBotWid": null,
+        "links": []
+      },
+      "id": {
+        "fromMe": false,
+        "remote": "120363028594091331@g.us",
+        "id": "3A9AA907A5A4F27B11F3",
+        "participant": {
+          "server": "c.us",
+          "user": "972523668151",
+          "_serialized": "972523668151@c.us"
+        },
+        "_serialized": "false_120363028594091331@g.us_3A9AA907A5A4F27B11F3_972523668151@c.us"
+      },
+      "ack": 0,
+      "hasMedia": false,
+      "body": "אה הבנתי, אז אולי באמת תעשי את זה סטטי כרגע כדי לראות שזה עובד כמו שאת מצפה",
+      "type": "chat",
+      "timestamp": 1690963124,
+      "from": "120363028594091331@g.us",
+      "to": "972502813201@c.us",
+      "author": "972523668151@c.us",
+      "deviceType": "ios",
+      "isForwarded": false,
+      "forwardingScore": 0,
+      "isStatus": false,
+      "isStarred": false,
+      "broadcast": false,
+      "fromMe": false,
+      "hasQuotedMsg": false,
+      "hasReaction": false,
+      "vCards": [],
+      "mentionedIds": [],
+      "isGif": false,
+      "links": []
+    }
+  },
+  {
+    "id": {
+      "server": "c.us",
+      "user": "972502813201",
+      "_serialized": "972502813201@c.us"
+    },
+    "name": "+972 50-281-3201",
+    "isGroup": false,
+    "unreadCount": 0,
+    "timestamp": 1690820292,
+    "archived": false,
+    "pinned": true,
+    "isMuted": false,
+    "muteExpiration": 0,
+    "lastMessage": {
+      "_data": {
+        "id": {
+          "fromMe": true,
+          "remote": "972502813201@c.us",
+          "id": "3AD152B5118E83A0DF53",
+          "self": "out",
+          "_serialized": "true_972502813201@c.us_3AD152B5118E83A0DF53_out"
+        },
+        "body": "",
+        "type": "image",
+        "t": 1690820292,
+        "notifyName": "",
+        "from": {
+          "server": "c.us",
+          "user": "972502813201",
+          "_serialized": "972502813201@c.us"
+        },
+        "to": {
+          "server": "c.us",
+          "user": "972502813201",
+          "_serialized": "972502813201@c.us"
+        },
+        "self": "out",
+        "ack": 3,
+        "invis": false,
+        "star": false,
+        "kicNotified": false,
+        "interactiveAnnotations": [],
+        "deprecatedMms3Url": "https://mmg.whatsapp.net/o1/v/t62.7118-24/f1/m232/up-oil-image-9c68694f-42c6-4f42-8154-ef0498b4dd6a?ccb=9-4&oh=01_AdRF_DDsp405mn-qyXAlq0zVQh_YxrdTSxX6JbNQS4x7qw&oe=64EF481C&mms3=true",
+        "directPath": "/o1/v/t62.7118-24/f1/m232/up-oil-image-9c68694f-42c6-4f42-8154-ef0498b4dd6a?ccb=9-4&oh=01_AdRF_DDsp405mn-qyXAlq0zVQh_YxrdTSxX6JbNQS4x7qw&oe=64EF481C",
+        "mimetype": "image/jpeg",
+        "filehash": "LLFFnOLn4Yyf4DMxfST8QTbhAAbav7urYrRxD2an/VY=",
+        "encFilehash": "Wcanb+j1+MsWSZiQNX5tL1dHX0lWy1t2Lv2vWo4vP2A=",
+        "size": 117614,
+        "mediaKey": "hLbFsqrAOibN2hOCNQUyND6COj1L3iUqU2k14hO5CFw=",
+        "mediaKeyTimestamp": 1690820292,
+        "isViewOnce": false,
+        "width": 1600,
+        "height": 1200,
+        "staticUrl": "",
+        "scanLengths": [
+          10058,
+          33532,
+          18019,
+          56003
+        ],
+        "scansSidecar": {},
+        "isFromTemplate": false,
+        "pollInvalidated": false,
+        "isSentCagPollCreation": false,
+        "latestEditMsgKey": null,
+        "latestEditSenderTimestampMs": null,
+        "mentionedJidList": [],
+        "groupMentions": [],
+        "isVcardOverMmsDocument": false,
+        "isForwarded": false,
+        "labels": [],
+        "hasReaction": false,
+        "originalSelfAuthor": {
+          "server": "c.us",
+          "user": "972502813201",
+          "_serialized": "972502813201@c.us"
+        },
+        "productHeaderImageRejected": false,
+        "lastPlaybackProgress": 0,
+        "isDynamicReplyButtonsMsg": false,
+        "isMdHistoryMsg": false,
+        "stickerSentTs": 0,
+        "isAvatar": false,
+        "lastUpdateFromServerTs": 0,
+        "requiresDirectConnection": false,
+        "invokedBotWid": null,
+        "links": []
+      },
+      "mediaKey": "hLbFsqrAOibN2hOCNQUyND6COj1L3iUqU2k14hO5CFw=",
+      "id": {
+        "fromMe": true,
+        "remote": "972502813201@c.us",
+        "id": "3AD152B5118E83A0DF53",
+        "self": "out",
+        "_serialized": "true_972502813201@c.us_3AD152B5118E83A0DF53_out"
+      },
+      "ack": 3,
+      "hasMedia": true,
+      "body": "",
+      "type": "image",
+      "timestamp": 1690820292,
+      "from": "972502813201@c.us",
+      "to": "972502813201@c.us",
+      "deviceType": "ios",
+      "isForwarded": false,
+      "forwardingScore": 0,
+      "isStatus": false,
+      "isStarred": false,
+      "fromMe": true,
+      "hasQuotedMsg": false,
+      "hasReaction": false,
+      "vCards": [],
+      "mentionedIds": [],
+      "isGif": false,
+      "links": []
+    }
+  },
+  {
+    "groupMetadata": {
+      "id": {
+        "server": "g.us",
+        "user": "972546390175-1631689586",
+        "_serialized": "972546390175-1631689586@g.us"
+      },
+      "creation": 1631689586,
+      "owner": {
+        "server": "c.us",
+        "user": "972546390175",
+        "_serialized": "972546390175@c.us"
+      },
+      "subject": "סיבוכיות סמסטר קיץ 2023",
+      "desc": "https://chat.whatsapp.com/Fvfit9AJ6yGAYnv8HqlPhx\n\nhttps://mailmtaac-my.sharepoint.com/:f:/g/personal/einavyo_mta_ac_il/Ei9RqMIp0l5JpWYfK9Ap1AwBeXqST-quQNvPA1rbFmO95w?e=0Bybad\nלינק לקבוצה של הסיכומים\nhttps://chat.whatsapp.com/FZCu5jVeFll456JdjicG17\n\nדרייב סיכומים של אסף:\nhttps://drive.google.com/drive/folders/1DzUSk0s5uv9CzCz7wGxz9IG2vRFbOTnO\n\nהקלטות של אסף:\n https://mailmtaac-my.sharepoint.com/:f:/g/personal/leviko_mta_ac_il/ErXEjaR1bw5CuE2_9xMjZr4BytozTlNR032ol_OmVqTrZg",
+      "descId": "D4DD40D4431F4456F3577675B602DAD4",
+      "descTime": 1689763150,
+      "descOwner": {
+        "server": "c.us",
+        "user": "972546734043",
+        "_serialized": "972546734043@c.us"
+      },
+      "restrict": false,
+      "announce": false,
+      "noFrequentlyForwarded": false,
+      "ephemeralDuration": 0,
+      "membershipApprovalMode": false,
+      "reportToAdminMode": false,
+      "support": false,
+      "suspended": false,
+      "terminated": false,
+      "uniqueShortNameMap": {},
+      "isParentGroup": false,
+      "isParentGroupClosed": false,
+      "defaultSubgroup": false,
+      "lastReportToAdminTimestamp": null,
+      "incognito": false,
+      "participants": [
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502813201",
+            "_serialized": "972502813201@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502002399",
+            "_serialized": "972502002399@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502022032",
+            "_serialized": "972502022032@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502262947",
+            "_serialized": "972502262947@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502313204",
+            "_serialized": "972502313204@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502320065",
+            "_serialized": "972502320065@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502464639",
+            "_serialized": "972502464639@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502574443",
+            "_serialized": "972502574443@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502611481",
+            "_serialized": "972502611481@c.us"
+          },
+          "isAdmin": true,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502688806",
+            "_serialized": "972502688806@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502869600",
+            "_serialized": "972502869600@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972503014445",
+            "_serialized": "972503014445@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972503023051",
+            "_serialized": "972503023051@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972504080079",
+            "_serialized": "972504080079@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972504647755",
+            "_serialized": "972504647755@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972504981020",
+            "_serialized": "972504981020@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972505230435",
+            "_serialized": "972505230435@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972505362668",
+            "_serialized": "972505362668@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972506479898",
+            "_serialized": "972506479898@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972506934628",
+            "_serialized": "972506934628@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972506962072",
+            "_serialized": "972506962072@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972507184482",
+            "_serialized": "972507184482@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972507226855",
+            "_serialized": "972507226855@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972507351255",
+            "_serialized": "972507351255@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972508330113",
+            "_serialized": "972508330113@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972508811661",
+            "_serialized": "972508811661@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972508844158",
+            "_serialized": "972508844158@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972509346606",
+            "_serialized": "972509346606@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972509364417",
+            "_serialized": "972509364417@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972509932068",
+            "_serialized": "972509932068@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972509956857",
+            "_serialized": "972509956857@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972522259053",
+            "_serialized": "972522259053@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972522277359",
+            "_serialized": "972522277359@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972522426297",
+            "_serialized": "972522426297@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972522916794",
+            "_serialized": "972522916794@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972523017878",
+            "_serialized": "972523017878@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972523128845",
+            "_serialized": "972523128845@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972523136036",
+            "_serialized": "972523136036@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972523668151",
+            "_serialized": "972523668151@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972523708259",
+            "_serialized": "972523708259@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972523763947",
+            "_serialized": "972523763947@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972523873888",
+            "_serialized": "972523873888@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524265414",
+            "_serialized": "972524265414@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524542547",
+            "_serialized": "972524542547@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524641985",
+            "_serialized": "972524641985@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524669214",
+            "_serialized": "972524669214@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525115622",
+            "_serialized": "972525115622@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525244131",
+            "_serialized": "972525244131@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525286663",
+            "_serialized": "972525286663@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525440778",
+            "_serialized": "972525440778@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525454035",
+            "_serialized": "972525454035@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525459229",
+            "_serialized": "972525459229@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525633823",
+            "_serialized": "972525633823@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525999523",
+            "_serialized": "972525999523@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972526188008",
+            "_serialized": "972526188008@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972526325447",
+            "_serialized": "972526325447@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972526431030",
+            "_serialized": "972526431030@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972526555574",
+            "_serialized": "972526555574@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972526678536",
+            "_serialized": "972526678536@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972527086934",
+            "_serialized": "972527086934@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972527211987",
+            "_serialized": "972527211987@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972527290020",
+            "_serialized": "972527290020@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972527707193",
+            "_serialized": "972527707193@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972528072525",
+            "_serialized": "972528072525@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972528376767",
+            "_serialized": "972528376767@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972528674286",
+            "_serialized": "972528674286@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972528682194",
+            "_serialized": "972528682194@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972528689896",
+            "_serialized": "972528689896@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972528742753",
+            "_serialized": "972528742753@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972528752144",
+            "_serialized": "972528752144@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972528873378",
+            "_serialized": "972528873378@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972532425555",
+            "_serialized": "972532425555@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972533369239",
+            "_serialized": "972533369239@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972533400513",
+            "_serialized": "972533400513@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972535304046",
+            "_serialized": "972535304046@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972542193559",
+            "_serialized": "972542193559@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972542381119",
+            "_serialized": "972542381119@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972542526667",
+            "_serialized": "972542526667@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972542659711",
+            "_serialized": "972542659711@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972543011522",
+            "_serialized": "972543011522@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972543039100",
+            "_serialized": "972543039100@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972543046780",
+            "_serialized": "972543046780@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972543069499",
+            "_serialized": "972543069499@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972543161387",
+            "_serialized": "972543161387@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972543322803",
+            "_serialized": "972543322803@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972543517299",
+            "_serialized": "972543517299@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972544251547",
+            "_serialized": "972544251547@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972544347154",
+            "_serialized": "972544347154@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972544568728",
+            "_serialized": "972544568728@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972544806310",
+            "_serialized": "972544806310@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972544886331",
+            "_serialized": "972544886331@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545309001",
+            "_serialized": "972545309001@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545414900",
+            "_serialized": "972545414900@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545672360",
+            "_serialized": "972545672360@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545697007",
+            "_serialized": "972545697007@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545700827",
+            "_serialized": "972545700827@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545769600",
+            "_serialized": "972545769600@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545980802",
+            "_serialized": "972545980802@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546279044",
+            "_serialized": "972546279044@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546306531",
+            "_serialized": "972546306531@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546446798",
+            "_serialized": "972546446798@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546734043",
+            "_serialized": "972546734043@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546735816",
+            "_serialized": "972546735816@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546818995",
+            "_serialized": "972546818995@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546824120",
+            "_serialized": "972546824120@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546885755",
+            "_serialized": "972546885755@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546887961",
+            "_serialized": "972546887961@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546902906",
+            "_serialized": "972546902906@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547274562",
+            "_serialized": "972547274562@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547307518",
+            "_serialized": "972547307518@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547310822",
+            "_serialized": "972547310822@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547344580",
+            "_serialized": "972547344580@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547421060",
+            "_serialized": "972547421060@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547557907",
+            "_serialized": "972547557907@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547746701",
+            "_serialized": "972547746701@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972548067630",
+            "_serialized": "972548067630@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972548098765",
+            "_serialized": "972548098765@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972548131694",
+            "_serialized": "972548131694@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972549438866",
+            "_serialized": "972549438866@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972549796946",
+            "_serialized": "972549796946@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972549892333",
+            "_serialized": "972549892333@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972556605963",
+            "_serialized": "972556605963@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972586555549",
+            "_serialized": "972586555549@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972587173274",
+            "_serialized": "972587173274@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972587953338",
+            "_serialized": "972587953338@c.us"
+          },
+          "isAdmin": false,
+          "isSuperAdmin": false
+        }
+      ],
+      "pendingParticipants": [],
+      "pastParticipants": [
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972506997061",
+            "_serialized": "972506997061@c.us"
+          },
+          "leaveTs": 1690625701,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972508285777",
+            "_serialized": "972508285777@c.us"
+          },
+          "leaveTs": 1690534471,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972543242401",
+            "_serialized": "972543242401@c.us"
+          },
+          "leaveTs": 1690456477,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972507492247",
+            "_serialized": "972507492247@c.us"
+          },
+          "leaveTs": 1690387715,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972506515881",
+            "_serialized": "972506515881@c.us"
+          },
+          "leaveTs": 1690265085,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545680805",
+            "_serialized": "972545680805@c.us"
+          },
+          "leaveTs": 1690186144,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524267486",
+            "_serialized": "972524267486@c.us"
+          },
+          "leaveTs": 1690119694,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972537200567",
+            "_serialized": "972537200567@c.us"
+          },
+          "leaveTs": 1689868459,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546969687",
+            "_serialized": "972546969687@c.us"
+          },
+          "leaveTs": 1689866363,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972505550935",
+            "_serialized": "972505550935@c.us"
+          },
+          "leaveTs": 1689861134,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547238523",
+            "_serialized": "972547238523@c.us"
+          },
+          "leaveTs": 1689768318,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972522972606",
+            "_serialized": "972522972606@c.us"
+          },
+          "leaveTs": 1689763141,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502519496",
+            "_serialized": "972502519496@c.us"
+          },
+          "leaveTs": 1689700982,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972548321377",
+            "_serialized": "972548321377@c.us"
+          },
+          "leaveTs": 1689693009,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546460485",
+            "_serialized": "972546460485@c.us"
+          },
+          "leaveTs": 1689689234,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972542579433",
+            "_serialized": "972542579433@c.us"
+          },
+          "leaveTs": 1689682947,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972505762233",
+            "_serialized": "972505762233@c.us"
+          },
+          "leaveTs": 1689619438,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972542180440",
+            "_serialized": "972542180440@c.us"
+          },
+          "leaveTs": 1689598462,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972543456925",
+            "_serialized": "972543456925@c.us"
+          },
+          "leaveTs": 1689597918,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972527069157",
+            "_serialized": "972527069157@c.us"
+          },
+          "leaveTs": 1689593477,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545998551",
+            "_serialized": "972545998551@c.us"
+          },
+          "leaveTs": 1689591777,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972542204735",
+            "_serialized": "972542204735@c.us"
+          },
+          "leaveTs": 1689591534,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546535329",
+            "_serialized": "972546535329@c.us"
+          },
+          "leaveTs": 1689591437,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972584441200",
+            "_serialized": "972584441200@c.us"
+          },
+          "leaveTs": 1689589299,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972522341753",
+            "_serialized": "972522341753@c.us"
+          },
+          "leaveTs": 1689588818,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524687572",
+            "_serialized": "972524687572@c.us"
+          },
+          "leaveTs": 1689588570,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546979679",
+            "_serialized": "972546979679@c.us"
+          },
+          "leaveTs": 1689586161,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502042307",
+            "_serialized": "972502042307@c.us"
+          },
+          "leaveTs": 1689585053,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524542322",
+            "_serialized": "972524542322@c.us"
+          },
+          "leaveTs": 1689584974,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972502831181",
+            "_serialized": "972502831181@c.us"
+          },
+          "leaveTs": 1689577911,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972504733447",
+            "_serialized": "972504733447@c.us"
+          },
+          "leaveTs": 1689535843,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545879890",
+            "_serialized": "972545879890@c.us"
+          },
+          "leaveTs": 1689532836,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972509256197",
+            "_serialized": "972509256197@c.us"
+          },
+          "leaveTs": 1689524575,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972527310063",
+            "_serialized": "972527310063@c.us"
+          },
+          "leaveTs": 1689521371,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972522699876",
+            "_serialized": "972522699876@c.us"
+          },
+          "leaveTs": 1689520768,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524845240",
+            "_serialized": "972524845240@c.us"
+          },
+          "leaveTs": 1689520691,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972505682728",
+            "_serialized": "972505682728@c.us"
+          },
+          "leaveTs": 1689517292,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972523266099",
+            "_serialized": "972523266099@c.us"
+          },
+          "leaveTs": 1689517287,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972543544221",
+            "_serialized": "972543544221@c.us"
+          },
+          "leaveTs": 1689517238,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546203418",
+            "_serialized": "972546203418@c.us"
+          },
+          "leaveTs": 1689517170,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547588533",
+            "_serialized": "972547588533@c.us"
+          },
+          "leaveTs": 1689517149,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547773632",
+            "_serialized": "972547773632@c.us"
+          },
+          "leaveTs": 1689512440,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525553761",
+            "_serialized": "972525553761@c.us"
+          },
+          "leaveTs": 1689503979,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972526942666",
+            "_serialized": "972526942666@c.us"
+          },
+          "leaveTs": 1689500077,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972549451310",
+            "_serialized": "972549451310@c.us"
+          },
+          "leaveTs": 1689499315,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524882737",
+            "_serialized": "972524882737@c.us"
+          },
+          "leaveTs": 1689499261,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545731995",
+            "_serialized": "972545731995@c.us"
+          },
+          "leaveTs": 1689499162,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525382072",
+            "_serialized": "972525382072@c.us"
+          },
+          "leaveTs": 1689497720,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972526065599",
+            "_serialized": "972526065599@c.us"
+          },
+          "leaveTs": 1689496706,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525225112",
+            "_serialized": "972525225112@c.us"
+          },
+          "leaveTs": 1689494724,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972544270224",
+            "_serialized": "972544270224@c.us"
+          },
+          "leaveTs": 1689494715,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972525207163",
+            "_serialized": "972525207163@c.us"
+          },
+          "leaveTs": 1689494034,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972546938800",
+            "_serialized": "972546938800@c.us"
+          },
+          "leaveTs": 1689493943,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972548016947",
+            "_serialized": "972548016947@c.us"
+          },
+          "leaveTs": 1689493333,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524287277",
+            "_serialized": "972524287277@c.us"
+          },
+          "leaveTs": 1689492822,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972548361877",
+            "_serialized": "972548361877@c.us"
+          },
+          "leaveTs": 1689492445,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972547746840",
+            "_serialized": "972547746840@c.us"
+          },
+          "leaveTs": 1689492393,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972545887303",
+            "_serialized": "972545887303@c.us"
+          },
+          "leaveTs": 1689492357,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972524249585",
+            "_serialized": "972524249585@c.us"
+          },
+          "leaveTs": 1689492239,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972526424885",
+            "_serialized": "972526424885@c.us"
+          },
+          "leaveTs": 1689492238,
+          "leaveReason": "Left"
+        },
+        {
+          "id": {
+            "server": "c.us",
+            "user": "972526374110",
+            "_serialized": "972526374110@c.us"
+          },
+          "leaveTs": 1689235281,
+          "leaveReason": "Left"
+        }
+      ],
+      "membershipApprovalRequests": [],
+      "subgroupSuggestions": []
+    },
+    "id": {
+      "server": "g.us",
+      "user": "972546390175-1631689586",
+      "_serialized": "972546390175-1631689586@g.us"
+    },
+    "name": "סיבוכיות סמסטר קיץ 2023",
+    "isGroup": true,
+    "isReadOnly": false,
+    "unreadCount": 0,
+    "timestamp": 1690959398,
+    "pinned": false,
+    "isMuted": false,
+    "muteExpiration": 0,
+    "lastMessage": {
+      "_data": {
+        "id": {
+          "fromMe": false,
+          "remote": "972546390175-1631689586@g.us",
+          "id": "3BC88E466D568E44EB8E3DE07249C5B4",
+          "participant": {
+            "server": "c.us",
+            "user": "972508811661",
+            "_serialized": "972508811661@c.us"
+          },
+          "_serialized": "false_972546390175-1631689586@g.us_3BC88E466D568E44EB8E3DE07249C5B4_972508811661@c.us"
+        },
+        "body": "מישהו בדק אם ההקלטות כאן תואמות לסמסטר הנוכחי?",
+        "type": "chat",
+        "t": 1690959398,
+        "notifyName": "",
+        "from": {
+          "server": "g.us",
+          "user": "972546390175-1631689586",
+          "_serialized": "972546390175-1631689586@g.us"
+        },
+        "to": {
+          "server": "c.us",
+          "user": "972502813201",
+          "_serialized": "972502813201@c.us"
+        },
+        "author": {
+          "server": "c.us",
+          "user": "972508811661",
+          "_serialized": "972508811661@c.us"
+        },
+        "self": "in",
+        "ack": 0,
+        "invis": false,
+        "star": false,
+        "kicNotified": false,
+        "isFromTemplate": false,
+        "thumbnail": "",
+        "pollInvalidated": false,
+        "isSentCagPollCreation": false,
+        "latestEditMsgKey": null,
+        "latestEditSenderTimestampMs": null,
+        "broadcast": false,
+        "quotedMsg": {
+          "type": "chat",
+          "body": "https://mailmtaac-my.sharepoint.com/:f:/g/personal/leviko_mta_ac_il/ErXEjaR1bw5CuE2_9xMjZr4BytozTlNR032ol_OmVqTrZg"
+        },
+        "quotedStanzaID": "3AA726EAEC56AAC3C175",
+        "quotedParticipant": {
+          "server": "c.us",
+          "user": "972502574443",
+          "_serialized": "972502574443@c.us"
+        },
+        "mentionedJidList": [],
+        "groupMentions": [],
+        "isVcardOverMmsDocument": false,
+        "labels": [],
+        "hasReaction": true,
+        "productHeaderImageRejected": false,
+        "lastPlaybackProgress": 0,
+        "isDynamicReplyButtonsMsg": false,
+        "isMdHistoryMsg": false,
+        "stickerSentTs": 0,
+        "isAvatar": false,
+        "lastUpdateFromServerTs": 0,
+        "requiresDirectConnection": false,
+        "invokedBotWid": null,
+        "links": []
+      },
+      "id": {
+        "fromMe": false,
+        "remote": "972546390175-1631689586@g.us",
+        "id": "3BC88E466D568E44EB8E3DE07249C5B4",
+        "participant": {
+          "server": "c.us",
+          "user": "972508811661",
+          "_serialized": "972508811661@c.us"
+        },
+        "_serialized": "false_972546390175-1631689586@g.us_3BC88E466D568E44EB8E3DE07249C5B4_972508811661@c.us"
+      },
+      "ack": 0,
+      "hasMedia": false,
+      "body": "מישהו בדק אם ההקלטות כאן תואמות לסמסטר הנוכחי?",
+      "type": "chat",
+      "timestamp": 1690959398,
+      "from": "972546390175-1631689586@g.us",
+      "to": "972502813201@c.us",
+      "author": "972508811661@c.us",
+      "deviceType": "android",
+      "forwardingScore": 0,
+      "isStatus": false,
+      "isStarred": false,
+      "broadcast": false,
+      "fromMe": false,
+      "hasQuotedMsg": true,
+      "hasReaction": true,
+      "vCards": [],
+      "mentionedIds": [],
+      "isGif": false,
+      "links": []
+    }
+  }
+]
