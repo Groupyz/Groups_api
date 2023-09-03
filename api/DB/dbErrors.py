@@ -1,5 +1,5 @@
 from app import db
-ERROR_GROUP_NOT_FOUND = 'Group not found'
+ERROR_GROUP_NOT_FOUND = 'Groups not found'
 
 
 class DbErrors():
