@@ -5,11 +5,13 @@ name = "pypi"
 
 [packages]
 flask = "*"
+flask-cors = "4.0.0"
 psycopg2-binary = "*"
 flask-sqlalchemy = "*"
 pytest = "*"
 dataclasses = "0.6"
 requests = "*"
+
 
 [dev-packages]
 black = "*"
