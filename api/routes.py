@@ -10,7 +10,7 @@ BOT_URL = os.environ.get("BOT_URL")
 BOT_URL_CHATS = BOT_URL + '/chats'
 
 
-@app.route(f'/{GROUP_PATH}/<userId>', methods=['GET'])
+@app.route(f'/{GROUP_PATH}/<userId>', methods=['GET'] )
 def handleGet(userId):
     try:
         groups = groupsHandler.getAllGroupsDB(userId)
