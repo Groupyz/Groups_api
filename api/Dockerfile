@@ -1,5 +1,7 @@
 FROM python:3.11
 
+ENV BOT_URL='http://bot_api:3001'
+
 WORKDIR /Groups_app
 
 EXPOSE 5050
