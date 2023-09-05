@@ -26,7 +26,11 @@ class JsonChatsToGroupConverter(ParserCoverter):
         self.json_to_dc = JsonToGroupDCConverter(user_id)
         self.dc_to_db_recs = GroupDCToDBRecsConverter()
 
-    def convert(self, group_chats: dict) -> list[Groups]:
+    def convert(self, group_chats: list) -> list[Groups]:
+
+        if not isinstance(group_chats, list):
+            raise ValueError("group_chats must be a list")
+
         only_group = self.filterer.filter(group_chats)
         dc_groups = self.json_to_dc.convert(only_group)
         groups_db = self.dc_to_db_recs.convert(dc_groups)
